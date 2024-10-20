@@ -1,0 +1,119 @@
+$color: rgb(255, 255, 255);
+$font-family: "Roboto", sans-serif;
+$font-weight: 100;
+$user-padding: 0rem 0.4rem;
+
+element-last-child {
+  align-self: flex-end;
+  margin-left: auto;
+}
+element-first-type {
+  font-weight: 700;
+  padding-left: 1rem;
+  padding-right: 0.2rem;
+}
+
+margin-p {
+  margin: 0.3rem 0;
+}
+body,
+html {
+  font-family: $font-family;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: $color;
+
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+.container {
+  border-radius: 40px;
+  width: 30rem;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+  box-shadow: 1px 1px 10px black;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.post {
+  .user-name {
+    display: flex;
+    padding: 0.5rem 0;
+    img {
+      align-self: center;
+      padding: 0rem 0.7rem;
+      width: 2.3rem;
+      height: 2.3rem;
+      border-radius: 50%;
+    }
+    h1 {
+      padding: $user-padding;
+      font-weight: 600;
+    }
+    :last-child {
+      @extend element-last-child;
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+
+  img {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .share-section {
+    display: flex;
+
+    img {
+      align-self: center;
+      padding: 0.5rem 0.7rem;
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+
+    :last-child {
+      @extend element-last-child;
+    }
+  }
+  .like-section {
+    display: flex;
+    p {
+      @extend margin-p;
+    }
+    p:first-of-type {
+      @extend element-first-type;
+    }
+  }
+
+  .description-section {
+    display: flex;
+    p {
+      @extend margin-p;
+    }
+    p:first-of-type {
+      @extend element-first-type;
+    }
+  }
+  .comments {
+    @extend margin-p;
+    @extend element-first-type;
+    font-weight: 400;
+    color: rgb(92, 91, 91);
+  }
+}
