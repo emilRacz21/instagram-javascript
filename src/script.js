@@ -89,6 +89,7 @@ class Instagram {
     let menu = document.getElementsByClassName("main-menu-section")[0];
     if (this.position < this.container.scrollTop) {
       menu.style.opacity = 0;
+      menu.style.zIndex = 0;
       menu.style.transform = "translateY(-100%)";
       menu.style.borderTopLeftRadius = "50px";
       menu.style.borderTopRightRadius = "50px";
@@ -97,6 +98,7 @@ class Instagram {
       menu.style.transform = "translateY(0%)";
       menu.style.borderTopLeftRadius = "0px";
       menu.style.borderTopRightRadius = "0px";
+      menu.style.zIndex = 1;
     }
     this.position = this.container.scrollTop;
   };

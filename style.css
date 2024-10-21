@@ -80,7 +80,6 @@ html {
   height: 0.9rem;
 }
 .container .main-menu-section {
-  z-index: 0;
   justify-content: space-between;
   transition: 0.3s ease;
   width: 28rem;
