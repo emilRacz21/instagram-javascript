@@ -24,7 +24,7 @@ This project implements an Instagram-like application using JavaScript, HTML, an
 1. **Clone the repository**:
 
        git clone https://github.com/emilRacz21/instagram-javascript.git
-       cd your-repo-name
+       cd instagram-javascript
    
 2. **Open the index.html file in your web browser. This will display the application**
 
