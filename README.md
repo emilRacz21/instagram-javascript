@@ -2,6 +2,8 @@
 
 This project implements an Instagram-like application using JavaScript, HTML, and CSS. It fetches images from the Pixabay API and displays them in a visually appealing format, including a user interface for stories and posts.
 
+* [Instagram like App](https://instaike-scroll-er.netlify.app)
+
 ## Features
 
 - Infinite scrolling to load more posts
