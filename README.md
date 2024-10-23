@@ -44,6 +44,11 @@ The main class Instagram is responsible for:
 * Managing user interface updates based on user interactions (scrolling)
 * Displaying posts and stories dynamically
 
+## Design
+
+![instagram](https://github.com/user-attachments/assets/73aa5c6a-7da8-40b6-9794-a3609d7d4aa5)
+
+
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or find a bug, please open an issue or submit a pull request.
