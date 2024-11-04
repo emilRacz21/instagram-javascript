@@ -121,7 +121,7 @@ html {
   display: flex;
   align-items: center;
   min-height: 8rem;
-  max-width: 26rem;
+  max-width: 100vw;
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none;
@@ -232,6 +232,9 @@ html {
     border-radius: 0px;
     width: 100vw;
     height: 100vh;
+  }
+  .container .scroll-stories-x {
+    width: 100vw;
   }
   .container .status-bar {
     width: 100vw;
